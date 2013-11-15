@@ -1,0 +1,365 @@
+/* Colour reference
+
+   page background: #414141
+   container background: white
+   normal text: black
+   links:-
+      - link: blue
+      - visited: purple
+      - hover: red
+      - active: #6e8bff
+   headings: gray
+
+*/
+
+/* Conventions:
+
+   - no capital letters
+   - use dashes not underscores
+   - Properties should be in alphabetical order
+
+*/
+
+/******* Start Reset *******/
+
+/* Source: http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/ */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+   font-family: inherit;
+   font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+   margin: 0;
+   outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	background: white;
+	color: black;
+   line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	font-weight: normal;
+   text-align: left;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+
+/******* End Reset *******/
+
+/******* Generic Classes (eg. body, a, p etc) *******/
+
+body {
+   background-color: #333333;
+   font-family: arial;
+   font-size: 13px;
+   margin: 0 auto;
+   padding: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   color: gray;
+   margin-bottom: 5px;
+}
+
+h1 {
+   font-size: 22px;
+}
+
+h1.error {
+   color: red;
+}
+
+h2 {
+   font-size: 20px;
+}
+
+h3 {
+   font-size: 18px;
+}
+
+h4 {
+   font-size: 16px;
+}
+
+h5 {
+   font-size: 14px;
+}
+
+h6 {
+   font-size: 12px;
+}
+
+/* Links */
+
+a:link {
+   color: blue;
+}
+a:visited {
+   color: purple;
+}
+a:hover {
+   color: red;
+}
+a:active {
+   color: #6e8bff;
+}
+
+p, li {
+   line-height: 1.5em;
+}
+
+p, div {
+   margin: 10px 0px 10px 0px
+}
+
+ul, ol {
+   margin-top: 10px;
+   margin-left: 15px;
+}
+
+li {
+   list-style: disc;
+   list-style-position: inside;
+}
+
+/******* Page *******/
+
+#page-container {
+   width: 970px;
+   margin: 0px auto;
+   min-height: 700px;
+}
+
+#main-content {
+   padding: 0px;
+   margin: 0px;
+   background-color: white;
+   border: 1px solid black;
+}
+
+.structure-outer {
+   margin: 0px;
+   padding: 0px;
+}
+
+.structure-inner {
+   display: block;
+   padding: 15px;
+}
+
+/******* Header *******/
+
+#header.structure-outer {
+   height: 50px;
+   background-color: #717171;
+   border-bottom: 3px solid orange;
+}
+
+#header.structure-outer.errors {
+   border-bottom: 3px solid #b90000;
+}
+
+#header span.structure-inner {
+   padding-top: 10px;
+}
+
+#logo {
+   font-family: arial;
+   color: white;
+   font-size: 22px;
+   display: block;
+   float: left;
+   margin-top: 5px;
+}
+
+#search-form {
+   display: block;
+   float: right;
+}
+
+#search-form input[type=text] {
+   width: 300px;
+   font-size: 14px;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   border-radius: 5px;
+   border: 1px solid white;
+   font-weight: bold;
+   padding-left: 3px;
+   margin-right: 0px;
+   height: 24px;
+}
+#search-form input[type=submit] {
+   margin-left: 5px;
+   border: 1px solid black;
+   height: 30px;
+   font-weight: bold;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   border-radius: 5px;
+}
+
+/******* Left Menu *******/
+
+#left.structure-outer {
+   width: 225px;
+   float: left;
+   position: absolute;
+}
+
+#left span.structure-inner {
+}
+
+/* 'FieldSets' for the left hand side */
+
+fieldset {
+   padding: 5px;
+   padding-top: 0px;
+   border: 1px solid;
+   border-color: #DDDDDD;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   border-radius: 5px;
+   background-color: #EEEEEE;
+   margin-bottom: 15px;
+}
+
+fieldset ul {
+   margin: 0px;
+   padding: 4px;
+}
+
+/* Specific to Left Hand Menu Options */
+
+fieldset.menus li, fieldset li a {
+   border-bottom: 1px dotted silver;
+   font-size: 12px;
+   text-decoration: none;
+   padding: 3px;
+}
+
+fieldset.menus li a {
+   border-bottom: none;
+   display: block;
+   margin: 0px;
+   padding: 0px;
+}
+
+fieldset.menus li {
+   display: block;
+   padding: 3px;
+}
+
+fieldset.menus li.selected {
+   font-weight: bold
+}
+
+fieldset.menus li:hover, fieldset li a:hover {
+   background-color: #D2D2D2;
+}
+
+fieldset.menus li.selected:hover, fieldset li.nodata:hover {
+   background-color: #EEEEEE;
+}
+
+fieldset.menus li a:active, fieldset li a:visited, fieldset li a:link {
+   color: blue;
+}
+
+/* Left Hand Sub Menu Items */
+
+fieldset.menus ul ul {
+   margin: 0;
+   padding: 0;
+}
+
+fieldset.menus ul ul li {
+   text-indent: 20px;
+   padding: 3px;
+}
+
+/* Specific to Lend Hand Filters */
+
+fieldset.filters ul {
+   margin-top: 10px;
+}
+
+fieldset.filters li, fieldset li a {
+   font-size: 12px;
+   text-decoration: none;
+   padding: 3px;
+}
+
+fieldset.filters li a {
+   border-bottom: none;
+   display: block;
+   margin: 0px;
+   padding: 0px;
+}
+
+fieldset.filters li {
+   display: block;
+   padding: 3px;
+}
+
+fieldset.filters li.selected {
+   font-weight: bold;
+}
+
+fieldset.filters li.unselected:hover, fieldset li.unselected a:hover {
+   background-color: #D2D2D2;
+}
+
+/* Legends */
+
+legend {
+   font-size: 16px;
+   font-weight: bold;
+   color: black;
+}
+
+/******* Main Content *******/
+
+#main.structure-outer {
+   margin-left: 225px;
+   position: relative;
+}
+
+#main span.structure-inner {
+}
+
+/******* Footer *******/
+
+#footer {
+   text-align: center;
+   color: white;
+   font-size: 10px;
+   font-weight: bold;
+}

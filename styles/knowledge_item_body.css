@@ -1,0 +1,30 @@
+/* 
+    Document   : knowledge_body.css
+    Created on : 19-Jan-2010, 21:34:15
+    Author     : Greg
+    Description:
+
+    Used to style the nugget. It is co-ordinated
+
+*/
+
+body {font-family: arial;}
+pre {color: gray; margin-left: 10px; font-size: 12px; background-color: #F7F7F7; padding: 7px; margin-right: 10px; }
+/** the following 'a' entries are in place for when a heading contains an anchor **/
+.item_body_heading_1 {display: block; border-bottom : 1px solid black; font-size: 22px; padding-bottom: 5px; font-weight: bold; text-shadow: 0 1px 1px #D8D8D8; color: gray; margin-top: 1em}
+.item_body_heading_1 a {color: gray;}
+.item_body_heading_2 {display: block; border-bottom : 1px dotted silver; font-size: 18px; font-weight: bold}
+.item_body_heading_2 a {color: black;}
+.item_body_heading_3 {display: block; color: navy; font-size: 16px; font-weight: bold}
+.item_body_heading_3 a {color: navy;}
+.item_body_heading_4 {color: black; font-size: 14px; font-weight: bold}
+.item_body_heading_4 a {color: black}
+.item_body_heading_5 {display: block; color: black; font-size: 13px; font-weight: bold}
+.item_body_heading_5 a {color: black}
+.item_body_heading_6 {display: block; color: blue; font-size: 12px; font-weight: bold}
+.item_body_heading_6 a {color: blue}
+.item_body_code {display: block; color: gray; font-family: "Courier New"; margin-left: 20px; font-size: 11px}
+
+table {border: 0px; margin: 0px; margin-top: 10px;}
+th {background-color: #515151; border-style: solid; color: white; font-size: 12px; text-align: left;}
+td {font-size: 12px; border-style: solid; border-color: black; }

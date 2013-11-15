@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+	<ShortName>My Knowledge Nuggets</ShortName>
+	<Description>Search the site My Knowledge Nuggets</Description>
+	<Url type="text/html" template="http://mkn.gannicott.co.uk/search.php?q={searchTerms}"/>
+</OpenSearchDescription>

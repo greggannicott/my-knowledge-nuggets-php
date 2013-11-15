@@ -1,0 +1,14 @@
+/* Used for the jQuery plugin 'tag' */
+
+SPAN.tagMatches {
+}
+
+SPAN.tagMatches SPAN {
+    padding: 4px;
+    margin-right: 4px;
+    background-color: #99ccff;
+    color: #fff;
+    cursor: pointer;
+    line-height: 2em;
+    color: black;
+}

@@ -1,0 +1,64 @@
+################################################ MOD_REWRITE
+
+RewriteEngine On
+
+### Nugget Lists
+
+# /users/<username>/
+RewriteRule users/([_0-9a-z]+)[/]?$ /user.php?what=nuggets&username=$1 [NC]
+
+# /users/<username>/nuggets/<page_number>/
+RewriteRule users/([_0-9a-z]+)/nuggets/([0-9]+)[/]?(([_0-9a-z&=])+)?$ /user.php?what=nuggets&username=$1&page_number=$2&$3 [NC]
+
+# /users/<username>/nuggets/drafts/<page_number>/
+RewriteRule users/([_0-9a-z]+)/nuggets/drafts/([0-9])?[/]?(([_0-9a-z&=])+)?$ /user.php?what=nuggets&draft=only&username=$1&page_number=$2&$3 [NC]
+
+# /users/<username>/nuggets/<page_number>/<order_by>/<order>/
+#RewriteRule users/([_0-9a-z]+)/nuggets/([0-9]+)/([a-z]+)/([a-z]+)[/]?$ /user.php?what=nuggets&username=$1&page_number=$2&order_by=$3&order=$4 [NC]
+
+#### Individual Nuggets
+
+# /users/<username>/nuggets/<nugget_id>-<nugget_title>/
+RewriteRule users/[_0-9a-z]+/nuggets/([0-9]+)-[_a-z0-9]+[/]?$ /nugget.php?id=$1 [NC]
+
+#### Settings
+
+# /settings/
+RewriteRule settings[/]?$ /settings.php [NC]
+
+# /settings/profile/
+RewriteRule settings/profile[/]?$ /settings_profile.php [NC]
+
+# /settings/configuration/
+RewriteRule settings/configuration[/]?$ /settings_configuration.php [NC]
+
+# /settings/password/
+RewriteRule settings/password[/]?$ /settings_password.php [NC]
+
+# /settings/delete/
+RewriteRule settings/delete[/]?$ /settings_delete.php [NC]
+
+# /settings/web_hooks/
+RewriteRule settings/web_hooks[/]?$ /settings_web_hooks.php [NC]
+
+#### History
+
+# /history/
+RewriteRule history[/]?$ /user_history.php [NC]
+
+# /history/<page_number>/
+RewriteRule history/([0-9]+)[/]?$ /user_history.php?page_number=$1 [NC]
+
+#### General Pages
+
+# /join/
+RewriteRule join[/]?$ /join.php [NC]
+
+# /login/
+RewriteRule login[/]?$ /login.php [NC]
+
+# /add/
+RewriteRule add[/]?$ /add.php [NC]
+
+# /about/
+RewriteRule about[/]?$ /about.php [NC]

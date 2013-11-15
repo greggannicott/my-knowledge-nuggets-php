@@ -1,0 +1,11 @@
+\.orig$
+\.orig\..*$
+\.chg\..*$
+\.rej$
+\.conflict\~$
+
+# use glob syntax.
+syntax: glob
+
+*.svn
+nbproject
